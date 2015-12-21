@@ -16,4 +16,4 @@ console.log(`
     images/gulp.png
   get updated in js too!`)
 
-button.addEventListener('click', alertAsyncMessage)
+// button.addEventListener('click', alertAsyncMessage)
