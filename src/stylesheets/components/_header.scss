@@ -1,15 +1,17 @@
 .header {
 	background: url(../images/photography/greenville-mobile.jpg) no-repeat center top;
 	background-size: auto 100%;
+	color: $color--white;
 	height: 100%;
+	text-align: center;
 
 	&__h1 {
-		padding: 55px 0;
+		padding: 23px 0;
 	}
 }
 
 .logo {
 	display: block;
 	margin: 0 auto;
-	width: percentage(486/750);
+	width: percentage(207/259);
 }

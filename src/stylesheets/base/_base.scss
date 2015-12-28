@@ -1,3 +1,28 @@
 html, body {
 	height: 100%;
 }
+
+body {
+	font-size: 16px;
+	font-family: 'Arial Narrow', sans-serif;
+	color: $color--blue;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: percentage(605/750);
+}
+
+p {
+	+ p {
+		margin-top: 1em;
+	}
+}
+
+hr {
+	background: $color--white;
+	border: 0;
+	height: 2px;
+	margin: 1em auto;
+	width: percentage(151/259);
+}

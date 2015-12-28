@@ -1,0 +1,37 @@
+.social {
+	background: $color--blue;
+	padding: 0.75em 0.5em;
+	position: relative;
+	text-align: center;
+
+	&:after {
+		content: '';
+		color: $color--blue;
+		display: block;
+
+		border-left: 7px solid transparent;
+		border-right: 7px solid transparent;
+		border-top: 7px solid;
+
+		height: 0;
+		width: 0;
+
+		position: absolute;
+		bottom: -7px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	&__link {
+		display: inline-block;
+		height: 20px;
+		margin: 0 5px;
+		vertical-align: middle;
+	}
+
+	&__icon {
+		display: block;
+		height: 100%;
+		fill: $color--white;
+	}
+}

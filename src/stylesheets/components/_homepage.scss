@@ -1,0 +1,28 @@
+.countdown {
+	@extend .clearfix;
+	display: inline-block;
+
+	&__number,
+	&__text {
+		float: left;
+		padding: 5px;
+	}
+
+	&__number {
+		background: $color--white;
+		border: 2px solid $color--white;
+		color: #83ACBE;
+	}
+
+	&__text {
+		border-top: 2px solid $color--white;
+		border-right: 2px solid $color--white;
+		border-bottom: 2px solid $color--white;
+		border-left: 0;
+	}
+}
+
+.opener {
+	padding: 2em 0;
+}
+
