@@ -24,5 +24,30 @@
 
 .opener {
 	padding: 2em 0;
+	text-align: center;
+}
+
+.video {
+	position: relative;
+
+	&__play-icon {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translateX(-50%) translateY(-50%);
+		max-width: 100px;
+		width: percentage(37/259);
+		display: block;
+	}
+
+	&__thumbnail {
+		width: 100%;
+	}
+
+	&__caption {
+		color: $color--grey;
+		font-size: calc(13em/16);
+	}
+
 }
 
