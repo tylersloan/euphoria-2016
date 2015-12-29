@@ -1,3 +1,7 @@
+* {
+	box-sizing: border-box;
+}
+
 html, body {
 	height: 100%;
 }
@@ -12,6 +16,25 @@ body {
 .container {
 	margin: 0 auto;
 	max-width: percentage(605/750);
+}
+
+.shaded {
+	background: $color--blue;
+	color: $color--white;
+	padding: 0.75em 0.5em;
+
+	&--darker {
+		background: $color--dark-blue;
+	}
+
+	a {
+		color: $color--white;
+	}
+}
+
+a {
+	color: $color--blue;
+	text-decoration: none;
 }
 
 p {

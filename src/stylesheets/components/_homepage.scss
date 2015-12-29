@@ -31,6 +31,7 @@
 	position: relative;
 
 	&__play-icon {
+		fill: $color--white;
 		position: absolute;
 		top: 50%;
 		left: 50%;
@@ -48,6 +49,25 @@
 		color: $color--grey;
 		font-size: calc(13em/16);
 	}
+}
 
+.cta {
+	border: 2px solid;
+	display: block;
+	margin: calc(21em/16) auto;
+	padding: 0.5em 1em;
+
+	p {
+		font-size: calc(19em/16);
+		font-weight: bolder;
+		letter-spacing: 1px;
+	  line-height: 1.189;
+	  margin: 0;
+	}
+
+	small {
+		display: block;
+		font-size: percentage(12/19);
+	}
 }
 
