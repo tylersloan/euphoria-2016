@@ -2,7 +2,13 @@
 	text-align: center;
 
 	p {
-		font-size: 18px;
+		@include mq(sm) {
+			font-size: 13px;
+		}
+
+		@include mq(lg) {
+			font-size: 18px;
+		}
 
 		span {
 			@include mq(sm) {
@@ -32,7 +38,6 @@
 
 		@include mq(xmd) {
 			display: inline-block;
-			// margin: 0 2px;
 		}
 	}
 }

@@ -97,7 +97,7 @@
 	@include mq(sm) {
 		border: 2px solid;
 		margin: calc(21em/16) auto;
-		padding: 0.5em 1em;
+		padding: .5em 0em;
 	}
 
 	@include mq(md) {

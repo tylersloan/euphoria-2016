@@ -24,8 +24,10 @@
 
 	&__label {
 		display: none;
+
 		@include mq(xmd) {
 			display: inline-block;
+			vertical-align: bottom;
 		}
 	}
 
