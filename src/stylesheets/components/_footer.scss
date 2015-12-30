@@ -33,8 +33,15 @@
 }
 
 .contact {
+	@extend %verlag--black;
+	letter-spacing: calc(120em/1000);
+
 	span {
 		display: block;
+
+		&:first-child {
+			margin-right: 0.5em;
+		}
 
 		@include mq(xmd) {
 			display: inline-block;

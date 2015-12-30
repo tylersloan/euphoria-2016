@@ -36,16 +36,17 @@
 		height: 20px;
 		margin: 0 5px;
 		vertical-align: middle;
-
-		@include mq(md) {
-			// height: 15px;
-		}
 	}
 
 	&__icon {
 		display: block;
 		height: 100%;
 		fill: $color--white;
+
+		&:hover,
+		&:focus {
+			fill: $color--blue;
+		}
 	}
 
 	@include mq(md) {

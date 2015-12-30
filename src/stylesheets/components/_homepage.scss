@@ -22,6 +22,10 @@
 		border-bottom: 2px solid $color--white;
 		border-left: 0;
 	}
+
+	@include mq(xmd) {
+		font-size: 18px;
+	}
 }
 
 .opener {

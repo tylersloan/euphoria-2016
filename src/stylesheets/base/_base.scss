@@ -17,10 +17,7 @@ body {
 	@extend .clearfix;
 	margin: 0 auto;
 	max-width: 966px;
-		width: percentage(605/750);
-
-	@include mq(md) {
-	}
+	width: percentage(605/750);
 }
 
 .shaded {
@@ -34,12 +31,22 @@ body {
 
 	a {
 		color: $color--white;
+
+		&:hover,
+		&:focus {
+			color: $color--blue;
+		}
 	}
 }
 
 a {
 	color: $color--blue;
 	text-decoration: none;
+
+	&:hover,
+	&:focus {
+		color: $color--dark-blue;
+	}
 }
 
 p {
