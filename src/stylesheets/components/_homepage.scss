@@ -1,6 +1,7 @@
 .countdown {
 	@extend .clearfix;
 	display: inline-block;
+	font-weight: bolder;
 
 	&__number,
 	&__text {
@@ -29,6 +30,7 @@
 
 .video {
 	position: relative;
+	padding-top: 55.35%;
 
 	&__play-icon {
 		fill: $color--white;
@@ -42,20 +44,40 @@
 	}
 
 	&__thumbnail {
+		height: 100%;
 		width: 100%;
+
+		position: absolute;
+		top: 0;right: 0;bottom: 0;left: 0;
 	}
 
 	&__caption {
 		color: $color--grey;
 		font-size: calc(13em/16);
+
+		@include mq(sm) {
+			text-align: center;
+		}
 	}
 }
 
 .cta {
-	border: 2px solid;
 	display: block;
-	margin: calc(21em/16) auto;
-	padding: 0.5em 1em;
+	max-width: 17em;
+	text-align: center;
+
+	@include mq(sm) {
+		border: 2px solid;
+		margin: calc(21em/16) auto;
+		padding: 0.5em 1em;
+	}
+
+	@include mq(md) {
+		border-top: 2px solid;
+		border-bottom: 2px solid;
+		margin: 3em auto;
+		padding: 1em;
+	}
 
 	p {
 		font-size: calc(19em/16);
@@ -68,6 +90,10 @@
 	small {
 		display: block;
 		font-size: percentage(12/19);
+
+		@include mq(md) {
+			margin-top: 3px;
+		}
 	}
 }
 

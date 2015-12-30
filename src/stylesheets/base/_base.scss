@@ -38,10 +38,12 @@ a {
 }
 
 p {
-	text-align: center;
-
 	+ p {
 		margin-top: 1em;
+	}
+
+	@include mq(md) {
+		font-size: 1.1em;
 	}
 }
 

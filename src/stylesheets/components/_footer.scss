@@ -1,0 +1,13 @@
+.footer {
+	@include mq(sm) {
+		text-align: center;
+	}
+
+	p {
+		span {
+			@include mq(sm) {
+				display: block;
+			}
+		}
+	}
+}

@@ -2,22 +2,31 @@
 	position: relative;
 	text-align: center;
 
-	&:after {
-		content: '';
-		color: $color--blue;
-		display: block;
+	@include mq(sm) {
+		&:after {
+			content: '';
+			color: $color--blue;
+			display: block;
 
-		border-left: 7px solid transparent;
-		border-right: 7px solid transparent;
-		border-top: 7px solid;
+			border-left: 7px solid transparent;
+			border-right: 7px solid transparent;
+			border-top: 7px solid;
 
-		height: 0;
-		width: 0;
+			height: 0;
+			width: 0;
 
-		position: absolute;
-		bottom: -7px;
-		left: 50%;
-		transform: translateX(-50%);
+			position: absolute;
+			bottom: -7px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+
+	&__label {
+		display: none;
+		@include mq(xmd) {
+			display: inline-block;
+		}
 	}
 
 	&__link {
@@ -25,11 +34,22 @@
 		height: 20px;
 		margin: 0 5px;
 		vertical-align: middle;
+
+		@include mq(md) {
+			// height: 15px;
+		}
 	}
 
 	&__icon {
 		display: block;
 		height: 100%;
 		fill: $color--white;
+	}
+
+	@include mq(md) {
+		background: none;
+		position: absolute;
+		top: 0;
+		right: 0;
 	}
 }

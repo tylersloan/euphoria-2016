@@ -5,3 +5,9 @@
 		display: table;
 	}
 }
+
+.sm-only {
+	@include mq(md) {
+		display: none;
+	}
+}
