@@ -38,10 +38,6 @@
 			display: table-cell;
 			vertical-align: middle;
 			padding-bottom: 15%;
-
-			@include mq(xmd) {
-				// padding-bottom: 0;
-			}
 		}
 	}
 
