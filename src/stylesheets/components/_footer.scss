@@ -1,13 +1,37 @@
 .footer {
-	@include mq(sm) {
-		text-align: center;
-	}
+	text-align: center;
 
 	p {
+		font-size: 18px;
+
 		span {
 			@include mq(sm) {
 				display: block;
 			}
+		}
+	}
+}
+
+.form-container {
+	@include mq(xmd) {
+		p,
+		form {
+			display: inline-block;
+		}
+
+		p {
+			margin-right: 1em;
+		}
+	}
+}
+
+.contact {
+	span {
+		display: block;
+
+		@include mq(xmd) {
+			display: inline-block;
+			// margin: 0 2px;
 		}
 	}
 }

@@ -14,8 +14,13 @@ body {
 }
 
 .container {
+	@extend .clearfix;
 	margin: 0 auto;
-	max-width: percentage(605/750);
+	max-width: 966px;
+		width: percentage(605/750);
+
+	@include mq(md) {
+	}
 }
 
 .shaded {
