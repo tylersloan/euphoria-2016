@@ -4,6 +4,10 @@
 	color: $color--white;
 	text-align: center;
 
+	@include mq(sm) {
+		height: 527px;
+	}
+
 	&__h1 {
 		@include mq(sm) {
 			margin: 0 auto;
@@ -19,12 +23,8 @@
 		}
 	}
 
-	@include mq(sm) {
-		height: 100%;
-	}
-
 	@include mq(md) {
-		background: url(../images/photography/greenville-tablet.jpg) no-repeat center top;
+		background: url(../images/photography/greenville-tablet.jpg) no-repeat center bottom;
 		background-size: auto 100%;
 		display: table;
 		width: 100%;
@@ -40,14 +40,15 @@
 			padding-bottom: 15%;
 
 			@include mq(xmd) {
-				padding-bottom: 0;
+				// padding-bottom: 0;
 			}
 		}
 	}
 
 	@include mq(lg) {
-		background: url(../images/photography/greenville-desktop.jpg) no-repeat center top;
+		background: url(../images/photography/greenville-desktop.jpg) no-repeat center bottom;
 		background-size: cover;
+		height: 695px;
 		padding-bottom: 1em;
 	}
 }
