@@ -1,5 +1,7 @@
 .h2 {
+	@extend %verlag--bold;
 	font-size: calc(31em/16);
+	letter-spacing: calc(20em/1000);
 	margin: 15px 0 0;
 
 	@include mq(md) {
@@ -12,7 +14,9 @@
 }
 
 .h3 {
+	@extend %verlag--black;
 	font-size: calc(15em/16);
+	letter-spacing: calc(120em/1000);
 	margin-bottom: 1em;
 	text-transform: uppercase;
 

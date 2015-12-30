@@ -1,0 +1,19 @@
+%base-font {
+	font-family: "Verlag A", "Verlag B";
+	font-style: normal;
+}
+
+%verlag--book {
+	@extend %base-font;
+	font-weight: 400;
+}
+
+%verlag--bold {
+	@extend %base-font;
+	font-weight: 700;
+}
+
+%verlag--black {
+	@extend %base-font;
+	font-weight: 800;
+}

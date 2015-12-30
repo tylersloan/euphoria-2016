@@ -1,7 +1,8 @@
 .countdown {
+	@extend %verlag--black;
 	@extend .clearfix;
 	display: inline-block;
-	font-weight: bolder;
+	letter-spacing: calc(50em/1000);
 
 	&__number,
 	&__text {
@@ -69,8 +70,10 @@
 	}
 
 	&__caption {
+		@extend %verlag--book;
 		color: $color--grey;
 		font-size: calc(13em/16);
+		line-height: 1.4;
 		margin-top: 3px;
 
 		@include mq(sm) {
@@ -79,6 +82,10 @@
 
 		@include mq(md) {
 			max-width: 400px;
+		}
+
+		@include mq(lg) {
+			max-width: 100%;
 		}
 	}
 }
@@ -103,8 +110,8 @@
 	}
 
 	p {
+		@extend %verlag--bold;
 		font-size: calc(19em/16);
-		font-weight: bolder;
 		letter-spacing: 1px;
 	  line-height: 1.189;
 	  margin: 0;
