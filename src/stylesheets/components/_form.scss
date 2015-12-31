@@ -19,6 +19,7 @@ button {
 	}
 
 	&__input {
+		border-radius: none;
 		@extend %verlag--bold;
 		color: $color--blue;
 		display: block;
@@ -38,5 +39,9 @@ button {
 		position: absolute;
 		top: 0;
 		right: 0;
+
+		&:focus {
+			color: $color--dark-blue;
+		}
 	}
 }
