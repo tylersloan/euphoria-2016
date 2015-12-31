@@ -14,6 +14,11 @@
 		background: $color--white;
 		border: 2px solid $color--white;
 		color: #83ACBE;
+
+		span {
+			display: block;
+			transform: scale(1.2) translateY(-1px);
+		}
 	}
 
 	&__text {
@@ -26,6 +31,10 @@
 	@include mq(xmd) {
 		font-size: 18px;
 	}
+}
+
+.numbers {
+	font-size: 115%;
 }
 
 .opener {

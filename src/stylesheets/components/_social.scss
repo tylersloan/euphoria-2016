@@ -24,6 +24,7 @@
 
 	&__label {
 		display: none;
+		letter-spacing: 1px;
 
 		@include mq(xmd) {
 			display: inline-block;
