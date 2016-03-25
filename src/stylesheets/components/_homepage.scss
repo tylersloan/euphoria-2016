@@ -142,3 +142,60 @@
 	}
 }
 
+$section: section;
+
+.#{$section} {
+	&__title {
+		text-align: center;
+
+		&.h3 {
+			@extend %verlag--bold;
+			font-size: 18px;
+			margin-bottom: 0;
+		}
+	}
+
+	&--flyer {
+
+		.#{$section}__title {
+			margin: 3em auto 1.5em;
+		}
+
+		.flyer-link {
+			display: block;
+			margin: 0 auto;
+
+			@media screen and (max-width: 605px) {
+				background: url(/images/flyer-portrait.jpg) center top no-repeat;
+				background-size: 100% auto;
+				height: 493px;
+				width: 258px;
+			}
+
+			@media screen and (min-width: 606px) {
+				background: url(/images/flyer-medium.jpg) center top no-repeat;
+				background-size: 100% auto;
+				height: 239px;
+				width: 488px;
+			}
+
+			@media screen and (min-width: 1024px) {
+				background: url(/images/flyer-large.jpg) center top no-repeat;
+				background-size: 100% auto;
+				height: 405px;
+				width: 826px;
+			}
+
+			@media screen and (min-width: 1280px) {
+				height: 474px;
+				width: 966px;
+			}
+		}
+	}
+}
+
+.hidden {
+	font-size: 0;
+	color: transparent;
+	visibility: hidden;
+}
